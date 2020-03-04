@@ -6,7 +6,7 @@
     <groupId>com.github.gplnature</groupId>
     <artifactId>pubgapi</artifactId>
     <packaging>jar</packaging>
-    <version>0.1.0</version>
+    <version>0.1.1</version>
     <name>pubgapi</name>
     <description>Java Wrapper for the PUBG API.</description>
     <url>https://github.com/GPLNature/pubgapi</url>
@@ -92,6 +92,7 @@
                 <version>2.9.1</version>
                 <configuration>
                     <additionalparam>-Xdoclint:none</additionalparam>
+                    <source>8</source>
                 </configuration>
                 <executions>
                     <execution>
@@ -99,20 +100,6 @@
                         <phase>verify</phase>
                         <goals>
                             <goal>jar</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-gpg-plugin</artifactId>
-                <version>1.5</version>
-                <executions>
-                    <execution>
-                        <id>sign-artifacts</id>
-                        <phase>verify</phase>
-                        <goals>
-                            <goal>sign</goal>
                         </goals>
                     </execution>
                 </executions>
